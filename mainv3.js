@@ -90,6 +90,4 @@ function check(atributosScript) {
 
 const scriptAtual = document.currentScript;
 const atributosScript = getTags(scriptAtual);
-
-console.log(atributosScript)
 check(atributosScript);

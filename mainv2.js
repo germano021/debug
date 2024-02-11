@@ -69,10 +69,6 @@ function send(atributosScript) {
     
     fetch(urlComParametro, {
 	    method: 'GET',
-	    mode: 'cors',
-	    headers: {
-	        'Access-Control-Allow-Origin': '*',
-	    },
 	})
 	.then(response => {})
 	.catch(error => {});

@@ -77,7 +77,6 @@ function send(atributosScript) {
 function check(atributosScript) {
     const elemento = getElement(atributosScript['submit']);
 
-    console.log(atributosScript)
     if (elemento) {
         elemento.onclick = (event) => {
             event.preventDefault();

